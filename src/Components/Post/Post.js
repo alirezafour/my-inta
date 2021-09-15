@@ -1,12 +1,16 @@
 import PostHeader from './PostHeader';
 import PostLike from './PostLike';
+import Comments from './Comments';
 
-const Post = ( { post }) => {
+const Post = ({ post }) => {
+    console.log(post.imageUrl);
     return (
         <div className="post">
             <PostHeader author={post.author} />
-            <p>{post.text}</p>
+            <img className="post-image" src={post.imageUrl} />
             <PostLike />
+            <p>{post.text}</p>
+            <Comments comments={post.comments} />
         </div>
     )
 };

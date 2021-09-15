@@ -1,7 +1,13 @@
+import { FcLike, FcLikePlaceholder } from 'react-icons/fc';
+
 const PostLike = () => {
+    const likedByMe = false;
     return (
-        <div>
-            <p>like bar here</p>
+        <div className="post-like">
+            {likedByMe ?
+                <FcLike /> :
+                <FcLikePlaceholder />
+            } <p>like bar here</p>
         </div>
     )
 };

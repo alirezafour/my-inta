@@ -1,3 +1,7 @@
 .App {
   text-align: center;
+  align-content: center;
+  display: flex;
+  align-items: center;
+  align-content: center;
 }
